@@ -1,0 +1,125 @@
+/* src/App.css */
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  text-align: center;
+  font-size: 16px;
+}
+
+.alert.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.alert.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Estilos adicionais para a página inicial e os formulários */
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.reserve-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.add-table-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.table-list {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.table-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-list .table-name {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.table-list .table-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-list .circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.table-list .circle.available {
+  background-color: green;
+}
+
+.table-list .circle.unavailable {
+  background-color: red;
+}
+
+.table-list .circle.edit {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.table-list .circle.delete {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.App {
+  background-color: #F1F1F1;
+  min-height: 100vh; /* Garante que cubra a altura total da viewport */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+}

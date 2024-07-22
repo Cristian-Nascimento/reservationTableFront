@@ -1,0 +1,77 @@
+.home-page {
+    position: relative;
+}
+
+.table-list {
+    margin-bottom: 20px;
+}
+
+.table-group {
+    margin-bottom: 20px;
+}
+
+.table-info {
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-icon, .delete-icon {
+    cursor: pointer;
+}
+
+/* Modificações para os modais */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px; /* Ajuste conforme necessário */
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.modal.open {
+    transform: translateX(0);
+}
+
+.modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-button {
+    margin-left: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.restaurant-logo {
+    width: 200px; /* ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* centraliza a imagem e adiciona um espaçamento inferior */
+}
