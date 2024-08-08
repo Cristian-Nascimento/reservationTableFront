@@ -10,7 +10,7 @@ const AddTablePage = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:9000/tables', {
+            const response = await fetch('https://reservationtableapi.onrender.com//tables', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

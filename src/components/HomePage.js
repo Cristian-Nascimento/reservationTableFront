@@ -13,7 +13,7 @@ const HomePage = ({ showAlert }) => {
 
     const fetchAvailableTables = useCallback(async () => {
         try {
-            const response = await fetch('http://localhost:9000/tables');
+            const response = await fetch('https://reservationtableapi.onrender.com//tables');
             const data = await response.json();
 
             // Ordena as mesas pelo tableNumber em ordem crescente
@@ -48,7 +48,7 @@ const HomePage = ({ showAlert }) => {
     const handleDeleteConfirm = async () => {
         if (selectedTable) {
             try {
-                const response = await fetch(`http://localhost:9000/tables/${selectedTable.id}`, {
+                const response = await fetch(`https://reservationtableapi.onrender.com//tables/${selectedTable.id}`, {
                     method: 'DELETE',
                 });
 
@@ -70,7 +70,7 @@ const HomePage = ({ showAlert }) => {
     const handleEditSave = async (updatedTable) => {
         if (updatedTable) {
             try {
-                const response = await fetch(`http://localhost:9000/tables/${updatedTable.id}`, {
+                const response = await fetch(`https://reservationtableapi.onrender.com//tables/${updatedTable.id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

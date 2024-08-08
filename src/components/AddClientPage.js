@@ -14,7 +14,7 @@ const AddClientPage = () => {
         // Função para buscar mesas disponíveis
         const fetchTables = async () => {
             try {
-                const response = await fetch('http://localhost:9000/tables');
+                const response = await fetch('https://reservationtableapi.onrender.com//tables');
                 const data = await response.json();
                 const uniqueTables = data.filter((table, index, self) =>
                     index === self.findIndex((t) => t.tableNumber === table.tableNumber)
@@ -33,7 +33,7 @@ const AddClientPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:9000/clients', {
+            const response = await fetch('https://reservationtableapi.onrender.com//clients', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
