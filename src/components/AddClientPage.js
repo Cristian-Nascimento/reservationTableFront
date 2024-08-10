@@ -73,7 +73,6 @@ const AddClientPage = () => {
                                 type="text"
                                 value={clientName}
                                 onChange={(e) => setClientName(e.target.value)}
-                                placeholder="Exemplo: Cristian"
                                 required
                             />
                         </label>
@@ -83,7 +82,6 @@ const AddClientPage = () => {
                                 type="text"
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
-                                placeholder="Exemplo: 81999999999"
                                 required
                             />
                         </label>
