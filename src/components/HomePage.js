@@ -129,7 +129,7 @@ const HomePage = ({ showAlert }) => {
                                 <li key={table.id} className="table-list-item">
                                     <div className="table-info">
                                         {table.client && <div>Cliente: {table.client}</div>}
-                                        {table.hourReservation && <div>Horário: {new Date(table.hourReservation).toLocaleString('pt-BR')}</div>}
+                                        {table.hourReservation && <div>Horário: {new Date(table.hourReservation).toUTCString()}</div>}
                                     </div>
                                     <div className="icon-container">
                                         <div className="edit-icon" onClick={() => handleEdit(table)}>✎</div>
